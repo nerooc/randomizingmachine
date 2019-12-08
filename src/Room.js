@@ -8,12 +8,17 @@ class Room extends Component {
 }
   render() {
     return (
-      <div className="room">
-        <p className="number">numer {this.props.data.number}</p>
-        {this.props.data.inhabitants.map( (inhabitant, i) =>
-            <p key={i}>{inhabitant}</p>
-        )}
+      <div>
+        <div className="room">
+          <p className="number">Pokój {this.props.data.number}</p>
+          {this.props.data.inhabitants.map( (inhabitant, i) => {
+              let name = inhabitant.split(' ');
+              return <p key={i}>{name[0]} <span className="surname">{name[1]}</span></p>
+            }
+          )}
+        </div>
       </div>
+      
     );
   }
 }

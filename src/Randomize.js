@@ -133,12 +133,12 @@ class Randomize extends Component {
     }
 
     let array = [];
-    Rooms.reverse().map( (room, i) => {
-        array.push(
-          <Room data={room} key={i} />
-        )
-      }
+    Rooms.map( (room, i) => 
+      array.push(
+        <Room data={room} key={i} />
+      )
     )
+
     this.setState({
       roomsContainer: array
     })
@@ -153,7 +153,10 @@ class Randomize extends Component {
           onClick={this.randomize}
         > Losuj pokoje </button>
         <div className="randomize-rooms">
-          {this.state.roomsContainer}
+          {this.state.roomsContainer.slice(0, 3)}
+        </div>
+        <div className="randomize-rooms">
+          {this.state.roomsContainer.slice(3)}
         </div>
       </div>
     );
