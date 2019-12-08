@@ -1,8 +1,8 @@
 .room{
   background: linear-gradient(151deg, rgba(70,108,163,1) 0%, rgba(71,70,109,1) 100%);
-  width: 200px;
+  width: 180px;
   margin-top: 20px;
-  padding: 20px;
+  padding: 30px;
   border-radius: 5px;
 }
 
