@@ -1,9 +1,9 @@
 .room{
-  background: linear-gradient(151deg, rgba(70,108,163,1) 0%, rgba(71,70,109,1) 100%);
+  background: linear-gradient(151deg, #5d46a3 0%, #310658 100%);
   width: 180px;
   margin-top: 20px;
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 0 40px;
 }
 
 p{
