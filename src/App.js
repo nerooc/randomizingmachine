@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css';
-import Room from './Room';
+import Randomize from './Randomize';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <button>Losuj pokoje</button>
-        
-        <Room />
+        <Randomize />
       </header>
     </div>
   );
