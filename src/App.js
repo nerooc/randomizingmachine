@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Randomize from './Randomize';
 
 function App() {

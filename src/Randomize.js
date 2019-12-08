@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './randomize.css';
 import Room from './Room';
 
 class Randomize extends Component {
@@ -131,9 +132,8 @@ class Randomize extends Component {
         }
     }
 
-    console.log(Rooms);
     let array = [];
-    Rooms.map( (room, i) => {
+    Rooms.reverse().map( (room, i) => {
         array.push(
           <Room data={room} key={i} />
         )
@@ -147,9 +147,14 @@ class Randomize extends Component {
   render() {
     
     return (
-      <div>
-        <button onClick={this.randomize}>Losuj pokoje</button>
-        {this.state.roomsContainer}
+      <div className="randomize-container">
+        <button 
+          className="btn-randomize"
+          onClick={this.randomize}
+        > Losuj pokoje </button>
+        <div className="randomize-rooms">
+          {this.state.roomsContainer}
+        </div>
       </div>
     );
   }

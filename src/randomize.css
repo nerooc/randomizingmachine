@@ -1,0 +1,35 @@
+.randomize-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #1f2323;
+}
+
+.btn-randomize{
+  width: 200px;
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 15px;
+  background: #507DBC;
+  color: #ececec;
+  transition: 0.2s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-randomize:hover{
+  box-shadow: inset 0 0 20px #466CA3,
+  0 2px 5px #191b1b;
+}
+
+.randomize-rooms{
+  margin: 50px;
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

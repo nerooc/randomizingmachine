@@ -1,0 +1,19 @@
+.room{
+  background: linear-gradient(151deg, rgba(70,108,163,1) 0%, rgba(71,70,109,1) 100%);
+  width: 200px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+p{
+  margin: 10px 0;
+  font-family: sans-serif;
+  color: #ececec;
+}
+
+.number{
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #f3f3f3;
+}

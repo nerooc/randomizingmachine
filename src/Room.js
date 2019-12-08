@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './room.css';
 
 class Room extends Component {
   constructor(props) {
@@ -7,9 +8,8 @@ class Room extends Component {
 }
   render() {
     return (
-      <div>
-        <p>numer: {this.props.data.number}</p>
-        <p>ilość osób: {this.props.data.size}</p>
+      <div className="room">
+        <p className="number">numer {this.props.data.number}</p>
         {this.props.data.inhabitants.map( (inhabitant, i) =>
             <p key={i}>{inhabitant}</p>
         )}
